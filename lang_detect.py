@@ -10,3 +10,12 @@ print(detect("Hallo! Herzlich willkommen"))
 print(detect("Здравствуйте! Добро пожаловать"))
 print(detect("¡Hola! Bienvenidos todos"))
 print(detect("வணக்கம்! அனைவரையும் வரவேற்கிறோம்"))
+
+
+while True:
+  a = input("Enter a language you want to detect else press 0- ")
+  if(a=="0"):
+    print("Thank You for using Language Detector")
+  else:
+    print(detect(a))
+  
