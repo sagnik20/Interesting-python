@@ -1,4 +1,5 @@
 import wikipedia
+a = input("Enter Words to Search - ")
 
-result = wikipedia.summary("Python", sentences=2)
+result = wikipedia.summary(a, sentences=2)
 print(result)
