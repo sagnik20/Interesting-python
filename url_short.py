@@ -1,3 +1,4 @@
 import pyshorteners
 a=pyshorteners.Shortener()
-print(a.tinyurl.short("https://www.instagram.com/sagnik.20"))
+
+print(a.tinyurl.short(input("Enter URL to be Shortened - ")))
