@@ -1,6 +1,8 @@
 import re
 import requests
-url = "http://sagnikc.azurewebsites.net/contact/"
+
+a = input("Enter Website to scrape Email From -")
+url = a
 
 EmailRegex = r"[\w\.-]+@[\w\.-]+"
 r = requests.get(url)
