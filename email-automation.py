@@ -1,3 +1,4 @@
+
 ''' If you have not installed pandas and smtplib then open your command prompt or terminal.
     Type pip install pandas to install pandas
     Type pip install smtplib to install smtlib '''
@@ -20,6 +21,7 @@ server.starttls()
 server.login("YOUR_EMAIL","YOUR_PASSWORD")
 
 #creating body of the email
+
 msg = "Hello this is testing mail for email automation"
 subject = "Testing Email Automation"
 body = "Subject: {}\n\n{}".format(subject,msg)
