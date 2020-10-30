@@ -1,5 +1,6 @@
 
-''' If you have not installed pandas and smtplib then open your command prompt or terminal.
+'''This is an Email sending automation tool.
+    If you have not installed pandas and smtplib then open your command prompt or terminal.
     Type pip install pandas to install pandas
     Type pip install smtplib to install smtlib '''
 
@@ -26,15 +27,13 @@ server.login(email, pw)
 # creating body of the email
 subject = "Testing Email Automation"
 msg = "Hello this is testing mail for email automation"
-body = f"""
-Subject: {subject}
-Message: {msg}
-"""
+body = f"""Subject: {subject}
+Message: {msg}"""
 
 # iterating over the column containing email ids and sending emails to each of id
 for email in emails:
     server.sendmail("YOUR_EMAIL", email, body)
 
 # message if email to all ids sent successfuly and stop the server
-print("Email sended successfuly")
+print("Email sent successfuly")
 server.quit()
